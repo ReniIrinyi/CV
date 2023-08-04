@@ -3,6 +3,8 @@ import {
   faEnvelope,
   faPhone,
   faGlobe,
+  faLocationDot,
+  faFlag,
 } from "@fortawesome/free-solid-svg-icons";
 @Component({
   selector: "app-about",
@@ -13,4 +15,6 @@ export class AboutComponent {
   faEnvelope = faEnvelope;
   faPhone = faPhone;
   faGlobe = faGlobe;
+  faLocationDot = faLocationDot;
+  faFlag = faFlag;
 }

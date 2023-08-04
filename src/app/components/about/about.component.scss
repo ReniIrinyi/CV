@@ -74,11 +74,16 @@
     display: flex;
     flex-direction: column;
 
-    & a {
+    & a,
+    p {
       transition: all 0.5s;
       padding-bottom: 0.5rem;
       text-decoration: none;
-      @include font-regular;
+      @include font-small-color(#828282);
+    }
+
+    & fa-icon {
+      margin-right: 0.5rem;
     }
 
     & a:hover {
