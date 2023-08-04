@@ -1,3 +1,13 @@
+@import "../styles.scss";
 .container {
-  padding: 5rem;
+  padding: 0rem;
+  @include respond(tablet) {
+    padding: 5rem;
+  }
+  @include respond(tablet, landscape) {
+    padding: 5rem;
+  }
+  @include respond(desktop) {
+    padding: 5rem;
+  }
 }

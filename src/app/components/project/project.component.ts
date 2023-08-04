@@ -5,6 +5,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
+import { DomSanitizer, SafeHtml } from "@angular/platform-browser";
 
 @Component({
   selector: "app-project",
@@ -12,10 +13,16 @@ import {
   styleUrls: ["./project.component.scss"],
 })
 export class ProjectComponent implements OnInit {
-  constructor(private dataservice: ProjectDataService) {}
+  constructor(
+    private dataservice: ProjectDataService,
+    private sanitizer: DomSanitizer
+  ) {}
 
   faArrowLeft = faChevronLeft;
   faArrowRight = faChevronRight;
+
+  sanitizeProjectdUrls: SafeHtml[] = [];
+  sanitizeGithubdUrls: SafeHtml[] = [];
 
   projects: Project[] = [];
   displayedProjects: Project[] = [];
@@ -32,6 +39,14 @@ export class ProjectComponent implements OnInit {
       (data) => {
         this.projects = data;
         this.updateDisplayedProjects();
+        this.projects.forEach((project) => {
+          this.sanitizeProjectdUrls?.push(
+            this.sanitizer.bypassSecurityTrustUrl(project.url)
+          );
+          this.sanitizeGithubdUrls?.push(
+            this.sanitizer.bypassSecurityTrustUrl(project.github)
+          );
+        });
       },
       (error) => {
         console.log("error while fetching data: ", error);

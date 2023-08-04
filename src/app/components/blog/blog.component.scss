@@ -6,9 +6,21 @@
   justify-content: space-between;
 }
 .first {
-  display: grid;
-  grid-template-columns: 40% 60%;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
+  @include respond(tablet) {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+  @include respond(tablet, landscape) {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
+  @include respond(desktop) {
+    display: grid;
+    grid-template-columns: 40% 60%;
+  }
 
   h1 {
     @include font-big;
@@ -21,7 +33,16 @@
     width: auto;
     height: 20rem;
     border-radius: 12px;
-    transform: translateX(10%);
+
+    @include respond(tablet) {
+      transform: translateX(10%);
+    }
+    @include respond(tablet, landscape) {
+      transform: translateX(10%);
+    }
+    @include respond(desktop) {
+      transform: translateX(10%);
+    }
   }
 }
 .text {
@@ -29,6 +50,7 @@
   line-height: 1.4;
 }
 .link {
+  padding-top: 1rem;
   & a {
     @include link;
   }

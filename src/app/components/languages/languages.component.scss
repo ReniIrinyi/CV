@@ -13,6 +13,10 @@
 .languages-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  @include respond(small-phone) {
+    display: flex;
+  }
+
   & .left {
     display: flex;
     align-self: center;

@@ -6,6 +6,12 @@
   justify-content: center;
   padding-top: 5rem;
   height: 5rem;
+  @include respond(tablet) {
+  }
+  @include respond(tablet, landscape) {
+  }
+  @include respond(desktop) {
+  }
 
   & p {
     align-self: center;

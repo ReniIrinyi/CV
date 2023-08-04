@@ -8,6 +8,7 @@
 
   & h1 {
     @include font-big;
+    padding-bottom: 1rem;
   }
 
   & h2 {
@@ -16,6 +17,7 @@
   }
 
   & a {
+    padding-top: 1rem;
     @include link;
   }
   & a:hover {
@@ -25,10 +27,20 @@
 
 .experience {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  @include respond(tablet) {
+    flex-direction: row;
+  }
+  @include respond(tablet, landscape) {
+    flex-direction: row;
+  }
+  @include respond(desktop) {
+    flex-direction: row;
+  }
 
   & img {
     width: 5rem;
+    margin: 0.5rem 0 1rem 1rem;
   }
 
   & p {

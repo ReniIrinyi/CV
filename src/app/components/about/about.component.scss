@@ -3,28 +3,59 @@
 .about-container {
   @include container;
   flex-direction: row;
+  @include respond(small-phone) {
+    flex-direction: column;
+  }
+  @include respond(small-phone, landscape) {
+    flex-direction: column;
+  }
+  @include respond(medium-phone) {
+    flex-direction: column;
+  }
 }
+
 .img-container {
   display: flex;
+  justify-content: center;
 
   & img {
     object-fit: cover;
-    width: 15rem;
+    width: 25rem;
     border-radius: 12px;
+    margin: 1rem;
     overflow: hidden;
+    @include respond(small-phone) {
+      width: auto;
+    }
+    @include respond(small-phone, landscape) {
+      width: auto;
+    }
+    @include respond(medium-phone) {
+      width: auto;
+    }
   }
 }
 
 .right {
-  padding-left: 2rem;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 .address-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  flex-direction: column;
+
+  @include respond(tablet) {
+    flex-direction: row;
+  }
+  @include respond(tablet, landscape) {
+    flex-direction: row;
+  }
+  @include respond(desktop) {
+    flex-direction: row;
+  }
 
   & .name {
     & h1 {
@@ -34,10 +65,12 @@
 
     & p {
       @include font-regular;
+      padding-bottom: 1rem;
     }
   }
 
   & .icons {
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
 
@@ -56,6 +89,5 @@
 
 .text-container {
   @include font-regular;
-  width: 90%;
-  line-height: 1.2;
+  line-height: 1.4;
 }

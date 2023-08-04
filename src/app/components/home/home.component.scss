@@ -1,10 +1,19 @@
 @import "../../../styles.scss";
 
 .home-container {
-  display: grid;
-  grid-template-rows: 40% 20% 40%;
-  grid-template-columns: 40% 60%;
-  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  @include respond(tablet, landscape) {
+    display: grid;
+    grid-template-rows: 40% 20% 40%;
+    grid-template-columns: 40% 60%;
+  }
+  @include respond(desktop) {
+    display: grid;
+    grid-template-rows: 40% 20% 40%;
+    grid-template-columns: 40% 60%;
+  }
 }
 app-languages {
   @include container;
@@ -12,20 +21,60 @@ app-languages {
   align-content: center;
 }
 app-hobbies {
-  grid-row: 2/4;
   @include container;
   justify-content: center;
   align-content: center;
+  grid-row: 2/4;
+  @include respond(small-phone) {
+    grid-row: auto;
+  }
+  @include respond(small-phone, landscape) {
+    grid-row: auto;
+  }
+  @include respond(medium-phone) {
+    grid-row: auto;
+  }
+  @include respond(medium-phone, landscape) {
+    grid-row: auto;
+  }
 }
 app-experience {
-  grid-row: 3/4;
   @include container;
   justify-content: center;
   align-content: center;
+  grid-row: 3/4;
+  @include respond(small-phone) {
+    grid-row: auto;
+  }
+  @include respond(small-phone, landscape) {
+    grid-row: auto;
+  }
+  @include respond(medium-phone) {
+    grid-row: auto;
+  }
+  @include respond(medium-phone, landscape) {
+    grid-row: auto;
+  }
 }
 app-blog {
+  @include container;
   grid-column: 2/3;
   grid-row: 1/3;
-  @include container;
-  padding-right: 0;
+  padding-right: 0 !important;
+  @include respond(small-phone) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+  @include respond(small-phone, landscape) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+  @include respond(medium-phone) {
+    grid-row: auto;
+    grid-column: auto;
+  }
+  @include respond(medium-phone, landscape) {
+    grid-row: auto;
+    grid-column: auto;
+  }
 }

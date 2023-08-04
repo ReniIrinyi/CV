@@ -1,8 +1,21 @@
 @import "../../../styles.scss";
 
 .project-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  @include respond(tablet) {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  @include respond(tablet, landscape) {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  @include respond(desktop) {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
 .project {
   @include container;
@@ -11,6 +24,15 @@
 
 .img {
   height: 20rem;
+  @include respond(tablet) {
+    height: 40rem;
+  }
+  @include respond(tablet, landscape) {
+    height: 40rem;
+  }
+  @include respond(desktop) {
+    height: 60rem;
+  }
   & img {
     border-radius: 12px;
     overflow: hidden;
@@ -55,7 +77,6 @@
   }
 }
 .pages {
-  grid-column: 1/4;
   display: flex;
   padding: 1rem;
   justify-content: flex-end;

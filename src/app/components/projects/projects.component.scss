@@ -2,24 +2,41 @@
 
 .projects-container {
   display: grid;
-  grid-template-rows: 17% 83% 10%;
+  grid-template-rows: 10% 80% 10%;
   height: auto;
+
+  @include respond(desktop) {
+    grid-template-rows: 5% 85% 10%;
+  }
 }
 .projects {
   @include container;
   justify-content: space-between;
 
   & h1 {
+    padding-bottom: 1rem;
     @include font-regular;
   }
 }
 .buttons {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-content: center;
+
   & button {
     @include button-1(#fff, #4f4f4f, #4f4f4f);
     margin-right: 1rem;
+    margin-bottom: 1rem;
+    @include respond(tablet) {
+      margin-bottom: 0;
+    }
+    @include respond(tablet, landscape) {
+      margin-bottom: 0;
+    }
+    @include respond(desktop) {
+      margin-bottom: 0;
+    }
   }
   & button:hover {
     background-color: #2f80ed;
