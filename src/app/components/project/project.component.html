@@ -11,10 +11,10 @@
       <p>{{ project.text }}</p>
     </div>
     <div class="buttons">
-      <a target="_blank" [href]="sanitizeProjectdUrls[project.idNumber]"
+      <a target="_blank" [href]="sanitizeProjectdUrls[project.idNumber - 1]"
         ><input class="button" type="button" value="Demo"
       /></a>
-      <a target="_blank" [href]="sanitizeGithubdUrls[project.idNumber]"
+      <a target="_blank" [href]="sanitizeGithubdUrls[project.idNumber - 1]"
         ><input class="button" type="button" value="Code"
       /></a>
     </div>

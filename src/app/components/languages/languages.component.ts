@@ -22,8 +22,8 @@ export class LanguagesComponent {
       value: 9,
     },
     {
-      name: "Sass",
-      value: 7,
+      name: "CS3/Sass",
+      value: 9,
     },
     {
       name: "TypeScript",
