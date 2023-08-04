@@ -1,0 +1,105 @@
+@mixin font-big {
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+}
+@mixin font-big-strong {
+  font-family: inherit;
+  font-size: 24px;
+  font-weight: 600;
+  color: #4f4f4f;
+}
+@mixin font-regular {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  color: #828282;
+}
+@mixin font-regular-color($color) {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 500;
+  color: $color;
+}
+@mixin font-regular-strong {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+@mixin font-small {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333;
+}
+@mixin font-small-color($color) {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  color: $color;
+}
+@mixin font-tiny {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  color: #828282;
+}
+@mixin font-tiny-color($color) {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  color: color;
+}
+@mixin font-tiny-roboto-color($color) {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: color;
+}
+@mixin button-1($background-color, $border-color, $color) {
+  @include font-tiny-color($color);
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  width: min-content;
+  border-radius: 12px;
+  background-color: $background-color;
+  border: 1px solid $border-color;
+}
+@mixin button-2($background-color, $border-color, $color) {
+  @include font-regular-color($color);
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  width: min-content;
+  border-radius: 12px;
+  background-color: $background-color;
+  border: 1px solid $border-color;
+}
+@mixin button-3($background-color, $border-color, $color) {
+  @include font-tiny-roboto-color($color);
+  transition: all 0.5s;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  width: min-content;
+  border-radius: 4px;
+  background-color: $background-color;
+  border: 1px solid $border-color;
+}
+
+@mixin link {
+  @include font-small-color(#2f80ed);
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+@mixin container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 12px;
+  margin: 1rem;
+  padding: 1.5rem;
+}

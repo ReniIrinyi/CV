@@ -1,0 +1,62 @@
+[
+  {
+    "idNumber": 1,
+    "id": "project--1",
+    "github": "https://github.com/ReniIrinyi/PrivateProject---KiWo",
+    "url": "https://kiwo-uerkental.ch/",
+    "header": "../../../assets/img/projects/Kiwo/header.webp",
+    "name": "Homepage",
+    "text": "I created this beautiful Landing Page for a local organisation. The project is close to my heart, it is the first project where I have had complete freedom. I tried to create a clear design, but it was important to be playful at the same time.",
+    "tech": "JavaScript, Html5, CS3, Sass"
+  },
+  {
+    "idNumber": 2,
+    "id": "project--2",
+    "github": "https://github.com/ReniIrinyi/Portfolio",
+    "url": "https://reniirinyi.vercel.app/home",
+    "header": "../../../assets/img/projects/PortfolioProject/header.webp",
+    "name": "Portfolio",
+    "text": "Since every decent developer has a portfolio, it seemed like a great idea to apply my newly acquired Angular skills to such a project. I really enjoyed the development and tried a bunch of new things and experimented a lot.",
+    "tech": "Angular, TypeScript, JavaScript, Html5, CS3, Sass"
+  },
+  {
+    "idNumber": 3,
+    "id": "project--3",
+    "github": "https://github.com/ReniIrinyi/edie-homepage",
+    "url": "https://edie-homepage-beta.vercel.app/#home",
+    "header": "../../../assets/img/projects/edie/header.webp",
+    "name": "Homepage",
+    "text": "The creation of this website belongs among the challenges on the devChallenges.io platform. ",
+    "tech": "Html5, Angular, TypeScript, CS3, Sass"
+  },
+  {
+    "idNumber": 4,
+    "id": "project--1",
+    "github": "https://github.com/ReniIrinyi/PrivateProject---KiWo",
+    "url": "https://kiwo-uerkental.ch/",
+    "header": "../../../assets/img/projects/Kiwo/header.webp",
+    "name": "Homepage2",
+    "text": "I created this beautiful Landing Page for a local organisation. The project is close to my heart, it is the first project where I have had complete freedom. I tried to create a clear design, but it was important to be playful at the same time.",
+    "tech": "JavaScript, Html5, CS3, Sass"
+  },
+  {
+    "idNumber": 5,
+    "id": "project--2",
+    "github": "https://github.com/ReniIrinyi/Portfolio",
+    "url": "https://reniirinyi.vercel.app/home",
+    "header": "../../../assets/img/projects/PortfolioProject/header.webp",
+    "name": "Portfolio2",
+    "text": "Since every decent developer has a portfolio, it seemed like a great idea to apply my newly acquired Angular skills to such a project. I really enjoyed the development and tried a bunch of new things and experimented a lot.",
+    "tech": "Angular, TypeScript, JavaScript, Html5, CS3, Sass"
+  },
+  {
+    "idNumber": 6,
+    "id": "project--3",
+    "github": "https://github.com/ReniIrinyi/edie-homepage",
+    "url": "https://edie-homepage-beta.vercel.app/#home",
+    "header": "../../../assets/img/projects/edie/header.webp",
+    "name": "Homepage2",
+    "text": "The creation of this website belongs among the challenges on the devChallenges.io platform. ",
+    "tech": "Html5, Angular, TypeScript, CS3, Sass"
+  }
+]

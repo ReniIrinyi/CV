@@ -1,0 +1,28 @@
+@import "../../../styles.scss";
+.hobbies-container {
+  & h1 {
+    padding-bottom: 2rem;
+    @include font-big;
+  }
+  & h3 {
+    @include font-regular-strong;
+    padding: 0.5rem 0 0.5rem 0;
+  }
+
+  & p {
+    @include font-small-color(#828282);
+    line-height: 1.2;
+  }
+  & .hobby {
+    & img {
+      width: 100%;
+      height: 9rem;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+
+  & .hobby:first-of-type {
+    padding-bottom: 2rem;
+  }
+}

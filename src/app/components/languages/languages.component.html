@@ -1,0 +1,34 @@
+<div class="languages-container">
+  <h1>Languages and Technologies</h1>
+  <div class="languages-content">
+    <div class="left">
+      <ul>
+        <li>Java</li>
+        <li>JavaScript</li>
+        <li>Html</li>
+        <li>Sass</li>
+        <li>TypeScript</li>
+        <li>Angular</li>
+        <li>Maven</li>
+        <li>Node.js</li>
+        <li>Express.js</li>
+        <li>SQL</li>
+      </ul>
+    </div>
+    <div class="right">
+      <ngx-charts-bar-horizontal
+        [view]="view"
+        [scheme]="colorScheme"
+        [results]="barChartData"
+        [gradient]="gradient"
+        [xAxis]="showXAxis"
+        [yAxis]="showYAxis"
+        [legend]="showLegend"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel"
+      ></ngx-charts-bar-horizontal>
+    </div>
+  </div>
+</div>

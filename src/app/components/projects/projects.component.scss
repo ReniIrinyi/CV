@@ -1,0 +1,29 @@
+@import "../../../styles.scss";
+
+.projects-container {
+  display: grid;
+  grid-template-rows: 17% 83% 10%;
+  height: auto;
+}
+.projects {
+  @include container;
+  justify-content: space-between;
+
+  & h1 {
+    @include font-regular;
+  }
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  & button {
+    @include button-1(#fff, #4f4f4f, #4f4f4f);
+    margin-right: 1rem;
+  }
+  & button:hover {
+    background-color: #2f80ed;
+    border: 1px solid #2f80ed;
+    color: #fff;
+  }
+}

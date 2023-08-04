@@ -1,0 +1,9 @@
+<div class="projects-container">
+  <div class="projects">
+    <h1>Projects ({{ projectsLength }})</h1>
+    <div class="buttons">
+      <button *ngFor="let stack of techstack">{{ stack }}</button>
+    </div>
+  </div>
+  <app-project></app-project>
+</div>

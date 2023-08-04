@@ -1,0 +1,34 @@
+<div class="project-container">
+  <div *ngFor="let project of displayedProjects" class="project">
+    <div class="img">
+      <img src=" {{ project.header }} " alt="" />
+    </div>
+    <div class="techstack">
+      <p>{{ project.tech }}</p>
+    </div>
+    <div class="description">
+      <h1>{{ project.name }}</h1>
+      <p>{{ project.text }}</p>
+    </div>
+    <div class="buttons">
+      <a href=" {{ project.url }} "
+        ><input class="button" type="button" value="Demo"
+      /></a>
+      <a href=" {{ project.github }} "
+        ><input class="button" type="button" value="Code"
+      /></a>
+    </div>
+  </div>
+  <div class="pages">
+    <fa-icon class="svg" [icon]="faArrowLeft" (click)="prevPage()"></fa-icon>
+    <ng-container *ngFor="let page of getPageArray()">
+      <input
+        type="button"
+        [value]="page"
+        (click)="currentPage = page; updateDisplayedProjects()"
+        [ngClass]="{ 'current-page': currentPage === page }"
+      />
+    </ng-container>
+    <fa-icon class="svg" [icon]="faArrowRight" (click)="nextPage()"></fa-icon>
+  </div>
+</div>

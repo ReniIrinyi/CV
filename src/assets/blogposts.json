@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "date": "06. Jul. 2023",
+    "name": "Using particles.js as a background with Angular 16",
+    "urlDescription": "Particles-Generator",
+    "url": "https://vincentgarreau.com/particles.js/",
+    "url2Description": "Vincent Garreu particles libary",
+    "url2": "https://github.com/VincentGarreau/particles.js/",
+    "url3Description": "My personalized particles.js json file",
+    "url3": "https://github.com/ReniIrinyi/Portfolio/blob/main/src/assets/particles.json",
+    "img": "../assets/img/blog/particles.webp",
+    "short": "I've always really liked dynamic backgrounds, and when I first came across the particles library, I knew I would use it when I had a portfolio. I did a lot of research on the internet and finally realised that it was easier than I thought - and like most blogs and videos describe. So I decided to take a few minutes and write it down to give an easy tutorial for those who are also big fans of similar effects."
+  },
+  {
+    "id": 2,
+    "date": "13. Jul. 2023",
+    "name": "I completed the Helsinki University's MOOC Java I. Course: Part 1. - Installing and running TMCBeans on Monterey",
+    "urlDescription": "Helsinki's MOOC Java I. Course",
+    "url": "https://java-programming.mooc.fi/",
+    "url2Description": "JDK 11 from Oracle",
+    "url2": "https://www.oracle.com/ch-de/java/technologies/javase/jdk11-archive-downloads.html",
+    "url3Description": "Netbeans",
+    "url3": "https://www.mooc.fi/en/installation/netbeans/",
+    "img": "../assets/img/blog/tmcbeans.png",
+    "short": "When I first considered learning a programming language, I initially looked into free online courses available on the internet because I wasn't sure if I would be genuinely receptive to it or if I could learn it. Ultimately, I chose Java, partly because I found a fantastic free course offered by the University of Helsinki. You can find the link to the course at the end of the post."
+  },
+  {
+    "id": 3,
+    "date": "20. Jul. 2023",
+    "name": "How to use FontAwesome with Angular 16",
+    "urlDescription": "Font Awesome Docs",
+    "url": "https://fontawesome.com/versions",
+    "url2Description": "Using Font Awesome with Angular",
+    "url2": "https://fontawesome.com/docs/web/use-with/angular",
+    "url3Description": "Angular-Fontawesome description on GitHub",
+    "url3": "https://github.com/FortAwesome/angular-fontawesome",
+    "img": "../assets/img/blog/fontAwesome.webp",
+    "short": "FontAwesome is the most popular icon set and toolkit. It has both paid & free versions. This guide shows you how to use the Free version of Angular FontAwesome."
+  },
+  {
+    "id": 4,
+    "date": "27. Jul. 2023",
+    "name": "How to use ngx-charts in Angular 16 Application",
+    "urlDescription": "NGX-Charts Demo",
+    "url": "https://swimlane.github.io/ngx-charts/#/ngx-charts/bar-horizontal",
+    "url2Description": "My CV with Ngx-Charts",
+    "url2": "#",
+    "url3Description": "Ngx-Charts Docs",
+    "url3": "https://swimlane.gitbook.io/ngx-charts/",
+    "img": "../assets/img/blog/languages.png",
+    "short": "I show you data visualization with Ngx-Charts, and how to use Ngx-Charts in Angular 14 Application."
+  }
+]

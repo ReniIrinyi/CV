@@ -1,0 +1,61 @@
+@import "../../../styles.scss";
+
+.about-container {
+  @include container;
+  flex-direction: row;
+}
+.img-container {
+  display: flex;
+
+  & img {
+    object-fit: cover;
+    width: 15rem;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+}
+
+.right {
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.address-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  & .name {
+    & h1 {
+      @include font-big-strong;
+      padding-bottom: 0.5rem;
+    }
+
+    & p {
+      @include font-regular;
+    }
+  }
+
+  & .icons {
+    display: flex;
+    flex-direction: column;
+
+    & a {
+      transition: all 0.5s;
+      padding-bottom: 0.5rem;
+      text-decoration: none;
+      @include font-regular;
+    }
+
+    & a:hover {
+      color: #333;
+    }
+  }
+}
+
+.text-container {
+  @include font-regular;
+  width: 90%;
+  line-height: 1.2;
+}

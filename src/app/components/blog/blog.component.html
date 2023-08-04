@@ -1,0 +1,19 @@
+<div class="blog-container">
+  <ng-container *ngIf="selectedBlog">
+    <div class="first">
+      <div class="header">
+        <p>Blog</p>
+        <h1>{{ selectedBlog.name }}</h1>
+      </div>
+      <img src="{{ selectedBlog.img }}" alt="" />
+    </div>
+    <div class="text">
+      <p>{{ selectedBlog.short }}</p>
+    </div>
+    <div class="link">
+      <a href="https://reniirinyi.vercel.app/blog/:{{ selectedBlog.id - 1 }}"
+        >read more &rarr;</a
+      >
+    </div>
+  </ng-container>
+</div>

@@ -1,0 +1,19 @@
+@import "../../../styles.scss";
+
+.footer-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-top: 5rem;
+  height: 5rem;
+
+  & p {
+    align-self: center;
+    @include font-small;
+
+    & a {
+      text-decoration: none;
+      @include font-small-color(#828282);
+    }
+  }
+}
