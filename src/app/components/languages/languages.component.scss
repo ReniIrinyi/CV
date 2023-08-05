@@ -27,28 +27,14 @@
 
     & ul {
       @include font-small-color(#4f4f4f);
+      align-self: center;
+      height: 90%;
       display: grid;
       grid-template-rows: repeat(10, 1fr);
 
-      @include respond(small-phone) {
-        align-self: center;
-        height: 90%;
-      }
-      @include respond(small-phone, landscape) {
-        align-self: center;
-        height: 90%;
-      }
-      @include respond(medium-phone) {
-        align-self: center;
-        height: 90%;
-      }
-      @include respond(medium-phone, landscape) {
-        align-self: center;
-        height: 90%;
-      }
-      @include respond(tablet) {
-        align-self: center;
-        height: 90%;
+      @include respond(desktop) {
+        align-self: normal;
+        height: auto;
       }
     }
   }

@@ -6,15 +6,15 @@
   height: auto;
   @include respond(tablet) {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   @include respond(tablet, landscape) {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   @include respond(desktop) {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .project {
@@ -24,15 +24,7 @@
 
 .img {
   height: 20rem;
-  @include respond(tablet) {
-    height: 40rem;
-  }
-  @include respond(tablet, landscape) {
-    height: 40rem;
-  }
-  @include respond(desktop) {
-    height: 60rem;
-  }
+
   & img {
     border-radius: 12px;
     overflow: hidden;
@@ -81,6 +73,15 @@
   padding: 1rem;
   justify-content: flex-end;
   align-content: flex-end;
+  @include respond(tablet) {
+    grid-column: 1/4;
+  }
+  @include respond(tablet, landscape) {
+    grid-column: 1/4;
+  }
+  @include respond(desktop) {
+    grid-column: 1/4;
+  }
 
   & input,
   .svg:not(:last-of-type) {

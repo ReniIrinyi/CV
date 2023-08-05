@@ -49,6 +49,10 @@ export class LanguagesComponent {
       name: "SQL",
       value: 10,
     },
+    {
+      name: "Electron",
+      value: 4,
+    },
   ];
   gradient = false;
   showXAxis = false;

@@ -5,8 +5,14 @@
   grid-template-rows: 10% 80% 10%;
   height: auto;
 
+  @include respond(tablet) {
+    grid-template-rows: 15% 80% 10%;
+  }
+  @include respond(tablet, landscape) {
+    grid-template-rows: 15% 80% 10%;
+  }
   @include respond(desktop) {
-    grid-template-rows: 5% 85% 10%;
+    grid-template-rows: 15% 80% 10%;
   }
 }
 .projects {

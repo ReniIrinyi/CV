@@ -102,7 +102,11 @@
   border-radius: 12px;
   margin: 0.5rem;
   padding: 1rem;
-
+  @include respond(small-phone) {
+    margin: 0.5rem 0rem;
+    border-radius: 0;
+    padding: 1.5rem 0.5rem;
+  }
   @include respond(tablet) {
     margin: 1rem;
     padding: 1.5rem;

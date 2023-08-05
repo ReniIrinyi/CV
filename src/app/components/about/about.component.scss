@@ -5,6 +5,8 @@
   flex-direction: row;
   @include respond(small-phone) {
     flex-direction: column;
+    margin: 0rem 0rem 0.5rem 0rem;
+    padding-top: 0.5rem;
   }
   @include respond(small-phone, landscape) {
     flex-direction: column;
@@ -25,6 +27,7 @@
     margin: 1rem;
     overflow: hidden;
     @include respond(small-phone) {
+      margin: 0.5rem 0rem;
       width: auto;
     }
     @include respond(small-phone, landscape) {
@@ -41,6 +44,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  @include respond(small-phone) {
+    margin: 0.1rem;
+  }
 }
 .address-container {
   display: flex;
