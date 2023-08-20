@@ -38,6 +38,10 @@ export class LanguagesComponent {
       value: 6,
     },
     {
+      name: "Electron",
+      value: 6,
+    },
+    {
       name: "Node.js",
       value: 5,
     },
@@ -48,10 +52,6 @@ export class LanguagesComponent {
     {
       name: "SQL",
       value: 10,
-    },
-    {
-      name: "Electron",
-      value: 4,
     },
   ];
   gradient = false;
