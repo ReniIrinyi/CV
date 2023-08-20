@@ -19,11 +19,11 @@ export class LanguagesComponent {
     },
     {
       name: "HTML",
-      value: 9,
+      value: 8,
     },
     {
       name: "CS3/Sass",
-      value: 9,
+      value: 8,
     },
     {
       name: "TypeScript",
@@ -51,7 +51,7 @@ export class LanguagesComponent {
     },
     {
       name: "SQL",
-      value: 10,
+      value: 8,
     },
   ];
   gradient = false;
