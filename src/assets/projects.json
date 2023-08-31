@@ -4,10 +4,10 @@
     "id": "project--1",
     "github": "https://github.com/ReniIrinyi/PrivateProject---KiWo",
     "url": "https://kiwo-uerkental.ch/",
-    "header": "../../../assets/img/projects/Kiwo/header.webp",
+    "header": "../../../assets/img/projects/Kiwo/home2.webp",
     "name": "Homepage",
-    "text": "I created this beautiful Landing Page for a local organisation. The project is close to my heart, it is the first project where I have had complete freedom. I tried to create a clear design, but it was important to be playful at the same time.",
-    "tech": "JavaScript, Html5, CS3, Sass"
+    "text": "The website is one of my first projects, from the end of 2022. In the new, updated version of August 2023, I completely rebuilt the application using Angular and developed server-side processing of formular data. ",
+    "tech": "Angular, Html5, CS3, Sass, Node.js, Express, MySQL"
   },
   {
     "idNumber": 2,
