@@ -4,7 +4,7 @@
     "id": "project--1",
     "github": "https://github.com/ReniIrinyi/PrivateProject---KiWo",
     "url": "https://kiwo-uerkental.ch/",
-    "header": "../../../assets/img/projects/Kiwo/home2.webp",
+    "header": "src/assets/img/projects/Kiwo/header.webp",
     "name": "Homepage",
     "text": "The website is one of my first projects, from the end of 2022. In the new, updated version of August 2023, I completely rebuilt the application using Angular and developed server-side processing of formular data. ",
     "tech": "Angular, Html5, CS3, Sass, Node.js, Express, MySQL"
