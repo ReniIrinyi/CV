@@ -28,5 +28,15 @@
     "name": "Homepage",
     "text": "The creation of this website belongs among the challenges on the devChallenges.io platform. ",
     "tech": "Html5, Angular, TypeScript, CS3, Sass"
+  },
+  {
+    "idNumber": 4,
+    "id": "project--4",
+    "github": "https://github.com/ReniIrinyi/Adventsfenster-Gruppe-Homepage",
+    "url": "https://adventsfenster-bottenwil.com/",
+    "header": "../../../assets/img/projects/advent/header.jpeg",
+    "name": "Homepage",
+    "text": "Despite the simplicity of the website, I learned something new again: I managed to implement the Google Maps API, as requested, so that users can find the windows accurately. I also created an interactive Advent window with Sass, which was a lot of fun. ",
+    "tech": "Html5, Angular, TypeScript, CS3, Sass, Php"
   }
 ]
