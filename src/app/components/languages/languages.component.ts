@@ -14,6 +14,10 @@ export class LanguagesComponent {
       value: 7,
     },
     {
+      name: "PHP",
+      value: 4,
+    },
+    {
       name: "JavaScript",
       value: 6,
     },
@@ -51,7 +55,7 @@ export class LanguagesComponent {
     },
     {
       name: "SQL",
-      value: 8,
+      value: 7,
     },
   ];
   gradient = false;
